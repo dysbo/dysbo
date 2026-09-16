@@ -1,24 +1,32 @@
 import Container from "@mui/material/Container";
 import { Link, NavLink } from "react-router";
 import "@fontsource/press-start-2p/latin-400.css";
-import "./Navbar.scss";
+import styles from "./Navbar.module.scss";
+import { Avatar } from '@mui/material'
+
+const AVATAR_SIZE = 36
 
 export function Navbar() {
   return (
-    <header className="navbar">
-      <div aria-hidden="true" className="navbar__art">
-        <span className="navbar__trail navbar__trail--blue" />
-        <span className="navbar__trail navbar__trail--violet" />
-        <span className="navbar__trail navbar__trail--pink" />
+    <header className={styles.navbar}>
+      <div aria-hidden="true" className={styles.navbar__art}>
+        <span className={`${styles.navbar__trail} ${styles["navbar__trail--blue"]}`} />
+        <span className={`${styles.navbar__trail} ${styles["navbar__trail--violet"]}`} />
+        <span className={`${styles.navbar__trail} ${styles["navbar__trail--pink"]}`} />
       </div>
-      <Container className="navbar__inner">
-        <Link className="navbar__brand" to="/">
+      <Container className={styles.navbar__inner}>
+        <Link className={styles.navbar__brand} to="/">
+          <Avatar
+            alt="Stylized photo of a woman with brown hair against a dark blue background"
+            src="/images/profile-photo.jpg"
+            sx={{ height: AVATAR_SIZE, width: AVATAR_SIZE }}
+          />
           dysbo.me
         </Link>
-        <nav aria-label="Main navigation" className="navbar__nav">
+        <nav aria-label="Main navigation" className={styles.navbar__nav}>
           <NavLink
             className={({ isActive }) =>
-              `navbar__link${isActive ? " navbar__link--active" : ""}`
+              `${styles.navbar__link}${isActive ? ` ${styles["navbar__link--active"]}` : ""}`
             }
             to="/about"
           >
@@ -26,7 +34,7 @@ export function Navbar() {
           </NavLink>
           <NavLink
             className={({ isActive }) =>
-              `navbar__link${isActive ? " navbar__link--active" : ""}`
+              `${styles.navbar__link}${isActive ? ` ${styles["navbar__link--active"]}` : ""}`
             }
             to="/projects"
           >

@@ -3,6 +3,9 @@ import { createTheme } from "@mui/material/styles";
 const theme = createTheme({
   palette: {
     mode: "dark",
+    background: {
+      default: "var(--color-navy-950)",
+    },
   },
   typography: {
     fontFamily: '"Space Grotesk", system-ui, sans-serif',

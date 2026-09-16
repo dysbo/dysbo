@@ -1,4 +1,4 @@
-.under-construction {
+.underConstruction {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -12,12 +12,12 @@
   }
 
   &__status {
-    color: #ff9bd8;
+    color: var(--color-arc-pink);
     font-family: "Press Start 2P", monospace;
     font-size: 0.75rem;
     line-height: 1.8;
     margin: 0;
-    text-shadow: 0 0 12px rgba(255, 103, 204, 0.7);
+    text-shadow: 0 0 12px color-mix(in srgb, var(--color-arc-pink) 70%, transparent);
     text-transform: uppercase;
   }
 }
