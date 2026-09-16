@@ -18,6 +18,7 @@ export function Navbar() {
         <Link className={styles.navbar__brand} to="/">
           <Avatar
             alt="Stylized photo of a woman with brown hair against a dark blue background"
+            className={styles.navbar__avatar}
             src="/images/profile-photo.jpg"
             sx={{ height: AVATAR_SIZE, width: AVATAR_SIZE }}
           />

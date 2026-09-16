@@ -12,12 +12,12 @@
   }
 
   &__status {
-    color: var(--color-arc-pink);
+    color: var(--color-arc-violet);
     font-family: "Press Start 2P", monospace;
     font-size: 0.75rem;
     line-height: 1.8;
     margin: 0;
-    text-shadow: 0 0 12px color-mix(in srgb, var(--color-arc-pink) 70%, transparent);
+    text-shadow: 0 0 12px color-mix(in srgb, var(--color-arc-violet) 70%, transparent);
     text-transform: uppercase;
   }
 }
