@@ -1,12 +1,13 @@
 import Container from "@mui/material/Container";
-import { Link, NavLink } from "react-router";
+import { Link } from "react-router";
 import "@fontsource/press-start-2p/latin-400.css";
-import styles from "./Navbar.module.scss";
+import styles from "./NavBar.module.scss";
 import { Avatar } from '@mui/material'
+import NavLink from '~/components/NavLink/NavLink'
 
 const AVATAR_SIZE = 36
 
-export function Navbar() {
+export function NavBar() {
   return (
     <header className={styles.navbar}>
       <div aria-hidden="true" className={styles.navbar__art}>
@@ -25,22 +26,9 @@ export function Navbar() {
           dysbo.me
         </Link>
         <nav aria-label="Main navigation" className={styles.navbar__nav}>
-          <NavLink
-            className={({ isActive }) =>
-              `${styles.navbar__link}${isActive ? ` ${styles["navbar__link--active"]}` : ""}`
-            }
-            to="/about"
-          >
-            About
-          </NavLink>
-          <NavLink
-            className={({ isActive }) =>
-              `${styles.navbar__link}${isActive ? ` ${styles["navbar__link--active"]}` : ""}`
-            }
-            to="/projects"
-          >
-            Projects
-          </NavLink>
+          <NavLink to="/about">About</NavLink>
+          <NavLink to="/projects">Projects</NavLink>
+          <NavLink to="/contact">Contact</NavLink>
         </nav>
       </Container>
     </header>

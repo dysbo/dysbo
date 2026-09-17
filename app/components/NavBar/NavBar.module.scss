@@ -70,8 +70,7 @@
     gap: 1rem;
   }
 
-  &__brand,
-  &__link {
+  &__brand {
     color: inherit;
     text-decoration: none;
   }
@@ -104,20 +103,4 @@
     gap: 1.5rem;
   }
 
-  &__link {
-    color: var(--color-text-muted);
-    font-family: "Press Start 2P", monospace;
-    font-size: 0.75rem;
-    text-shadow: 0 0 12px color-mix(in srgb, var(--color-arc-violet) 55%, transparent);
-    transition: color 150ms ease;
-
-    &:hover {
-      color: var(--color-arc-pink);
-      text-shadow: 0 0 12px color-mix(in srgb, var(--color-arc-pink) 70%, transparent);
-    }
-
-    &--active {
-      color: var(--color-text-primary);
-    }
-  }
 }

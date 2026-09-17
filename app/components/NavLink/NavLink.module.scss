@@ -1,0 +1,17 @@
+.navLink {
+  color: var(--color-text-muted);
+  font-family: "Press Start 2P", monospace;
+  font-size: 0.75rem;
+  text-decoration: none;
+  text-shadow: 0 0 12px color-mix(in srgb, var(--color-arc-violet) 55%, transparent);
+  transition: color 150ms ease;
+
+  &:hover {
+    color: var(--color-arc-pink);
+    text-shadow: 0 0 12px color-mix(in srgb, var(--color-arc-pink) 70%, transparent);
+  }
+}
+
+.active {
+  color: var(--color-text-primary);
+}

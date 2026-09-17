@@ -12,7 +12,7 @@ import "@fontsource/space-grotesk/300.css";
 import "@fontsource/space-grotesk/400.css";
 import "@fontsource/space-grotesk/500.css";
 import "./app.scss";
-import { Navbar } from "./components/Navbar/Navbar";
+import { NavBar } from "~/components/NavBar/NavBar";
 import theme from "./theme";
 
 export function Layout({ children }: { children: React.ReactNode }) {
@@ -39,7 +39,7 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Navbar />
+      <NavBar />
       <Box component="main" className="app-main">
         <Outlet />
       </Box>
