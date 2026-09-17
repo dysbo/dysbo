@@ -1,6 +1,7 @@
 import { reactRouter } from '@react-router/dev/vite'
 import { type ConfigEnv, defineConfig } from 'vitest/config'
-import { type CoverageOptions } from 'vitest/node'
+
+import type { CoverageOptions } from 'vitest/node'
 
 const coverageSettings: CoverageOptions = {
   enabled: true,

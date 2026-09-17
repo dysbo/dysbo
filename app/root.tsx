@@ -1,19 +1,22 @@
-import Box from "@mui/material/Box";
-import CssBaseline from "@mui/material/CssBaseline";
-import { ThemeProvider } from "@mui/material/styles";
+import Box from '@mui/material/Box'
+import CssBaseline from '@mui/material/CssBaseline'
+import { ThemeProvider } from '@mui/material/styles'
 import {
   Links,
   Meta,
   Outlet,
   Scripts,
   ScrollRestoration,
-} from "react-router";
-import "@fontsource/space-grotesk/300.css";
-import "@fontsource/space-grotesk/400.css";
-import "@fontsource/space-grotesk/500.css";
-import "./app.scss";
-import { NavBar } from "~/components/NavBar/NavBar";
-import theme from "./theme";
+} from 'react-router'
+
+import { NavBar } from '~/components/NavBar/NavBar'
+
+import theme from './theme'
+
+import '@fontsource/space-grotesk/300.css'
+import '@fontsource/space-grotesk/400.css'
+import '@fontsource/space-grotesk/500.css'
+import './app.scss'
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -32,7 +35,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Scripts />
       </body>
     </html>
-  );
+  )
 }
 
 export default function App() {
@@ -44,5 +47,5 @@ export default function App() {
         <Outlet />
       </Box>
     </ThemeProvider>
-  );
+  )
 }

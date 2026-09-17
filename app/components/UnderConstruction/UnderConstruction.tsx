@@ -1,12 +1,13 @@
-import Box from "@mui/material/Box";
-import Container from "@mui/material/Container";
-import Typography from "@mui/material/Typography";
-import "@fontsource/press-start-2p/latin-400.css";
-import styles from "./UnderConstruction.module.scss";
+import Box from '@mui/material/Box'
+import Container from '@mui/material/Container'
+import Typography from '@mui/material/Typography'
+
+import '@fontsource/press-start-2p/latin-400.css'
+import styles from './UnderConstruction.module.scss'
 
 type UnderConstructionProps = {
   title: string;
-};
+}
 
 export function UnderConstruction({ title }: UnderConstructionProps) {
   return (
@@ -21,5 +22,5 @@ export function UnderConstruction({ title }: UnderConstructionProps) {
         <p className={styles.underConstruction__status}>Under construction</p>
       </Box>
     </Container>
-  );
+  )
 }

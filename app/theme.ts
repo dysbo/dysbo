@@ -1,10 +1,10 @@
-import { createTheme } from "@mui/material/styles";
+import { createTheme } from '@mui/material/styles'
 
 const theme = createTheme({
   palette: {
-    mode: "dark",
+    mode: 'dark',
     background: {
-      default: "var(--color-navy-950)",
+      default: 'var(--color-navy-950)',
     },
   },
   typography: {
@@ -14,20 +14,20 @@ const theme = createTheme({
     fontWeightMedium: 500,
     h1: {
       fontWeight: 400,
-      fontSize: "2.5rem",
+      fontSize: '2.5rem',
       lineHeight: 1.2,
     },
     h2: {
       fontWeight: 400,
-      fontSize: "2rem",
+      fontSize: '2rem',
       lineHeight: 1.25,
     },
     h3: {
       fontWeight: 400,
-      fontSize: "1.5rem",
+      fontSize: '1.5rem',
       lineHeight: 1.3,
     },
   },
-});
+})
 
-export default theme;
+export default theme

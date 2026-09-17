@@ -1,13 +1,14 @@
-import { render, screen } from "@testing-library/react";
-import { UnderConstruction } from "./UnderConstruction";
+import { render, screen } from '@testing-library/react'
 
-describe("UnderConstruction", () => {
-  it("should render its title and construction status", () => {
-    render(<UnderConstruction title="Projects template" />);
+import { UnderConstruction } from './UnderConstruction'
+
+describe('UnderConstruction', () => {
+  it('should render its title and construction status', () => {
+    render(<UnderConstruction title="Projects template" />)
 
     expect(
-      screen.getByRole("heading", { name: "Projects template" }),
-    ).toBeInTheDocument();
-    expect(screen.getByText("Under construction")).toBeInTheDocument();
-  });
-});
+      screen.getByRole('heading', { name: 'Projects template' }),
+    ).toBeInTheDocument()
+    expect(screen.getByText('Under construction')).toBeInTheDocument()
+  })
+})
